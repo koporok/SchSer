@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="888.0" style="-fx-background-color: #BCBCBC;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo200000.window.AdminStudent">
+    <children>
+        <ImageView fitHeight="521.0" fitWidth="377.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+
+        </ImageView>
+        <TextField fx:id="fullName_students" layoutX="31.0" layoutY="154.0" prefHeight="27.0" prefWidth="280.0" promptText="ФИО" style="-fx-background-color: #fafafa;">
+            <font>
+                <Font name="Charter Bold" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="phone_number" layoutX="31.0" layoutY="299.0" prefHeight="27.0" prefWidth="160.0" promptText="Номер телефона" style="-fx-background-color: #fafafa;">
+            <font>
+                <Font name="Charter Bold" size="13.0" />
+            </font>
+        </TextField>
+        <Button fx:id="dell_button" layoutX="31.0" layoutY="355.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="280.0" style="-fx-background-color: #BC2F36;" text="Удалить" textFill="WHITE">
+            <font>
+                <Font name="Charter Bold" size="13.0" />
+            </font>
+        </Button>
+        <TableView fx:id="table" layoutX="350.0" layoutY="7.0" prefHeight="503.0" prefWidth="533.0" style="-fx-background-color: #DBDBDB;">
+            <columns>
+                <TableColumn fx:id="fullName_table" prefWidth="123.0" style="-fx-background-color: #BC2F36;" text="ФИО" />
+                <TableColumn fx:id="phone_number_table" prefWidth="101.0" style="-fx-background-color: #BC2F36;" text="Телефона" />
+                <TableColumn fx:id="data_table" minWidth="0.0" prefWidth="57.0" style="-fx-background-color: #BC2F36;" text="Возраст " />
+                <TableColumn fx:id="login_table1" prefWidth="92.0" style="-fx-background-color: #BC2F36;" text="Логин" />
+                <TableColumn fx:id="number_group_table" prefWidth="63.0" style="-fx-background-color: #BC2F36;" text="Группа" />
+                <TableColumn fx:id="type_sport" prefWidth="110.0" style="-fx-background-color: #BC2F36;" text="Спорт" />
+            </columns>
+        </TableView>
+        <TextField fx:id="number_group" layoutX="31.0" layoutY="225.0" prefHeight="27.0" prefWidth="160.0" promptText="Номер группы" style="-fx-background-color: #fafafa;">
+            <font>
+                <Font name="Charter Bold" size="13.0" />
+            </font>
+        </TextField>
+        <ImageView fitHeight="38.0" fitWidth="52.0" layoutX="634.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+        </ImageView>
+        <Button fx:id="back_button" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #BC2F36;" text="&lt;" textFill="WHITE">
+            <font>
+                <Font name="Charter Bold" size="13.0" />
+            </font>
+        </Button>
+        <TextField fx:id="Sport" layoutX="202.0" layoutY="225.0" prefHeight="27.0" prefWidth="106.0" promptText="Спорт" style="-fx-background-color: #fafafa;">
+            <font>
+                <Font name="Charter Bold" size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="data" layoutX="202.0" layoutY="297.0" prefHeight="25.0" prefWidth="106.0" promptText="Возратс" />
+        <Label layoutX="31.0" layoutY="125.0" text="Фамилия Имя Очество ребёнка:" textFill="#fffefe">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="31.0" layoutY="198.0" text="Номер группы:" textFill="#fcf7f7">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="226.0" layoutY="198.0" text="Спорт:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="31.0" layoutY="277.0" text="Номер телефона:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="226.0" layoutY="277.0" prefWidth="61.0" text="Возратс:" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="applications" layoutX="31.0" layoutY="480.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="280.0" style="-fx-background-color: #BC2F36;" text="Просмотр заявок " textFill="WHITE">
+            <font>
+                <Font name="Charter Bold" size="13.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
