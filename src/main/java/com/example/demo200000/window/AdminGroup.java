@@ -66,6 +66,26 @@ public class AdminGroup {
     private TextField sport;
     @FXML
     private Button student_button;
+    private StudentsGroup studentsGroup;
+
+    public  int IdGroup;
+    public int MaxsS;
+    public int getIdGroup() {
+        return IdGroup;
+    }
+
+    public void setIdGrupp(int idGrupp) {
+        this.IdGroup = idGrupp;
+    }
+
+    public int getMaxsS() {
+        return MaxsS;
+    }
+
+    public void setMaxsSint(int MaxsS) {
+        this.MaxsS= MaxsS;
+    }
+
 
     @FXML
     void initialize() {
@@ -79,6 +99,8 @@ public class AdminGroup {
                 String Agg = newSelection.getAage();
                 int Maxs = newSelection.getMaxstudents();
                 String Sport = newSelection.getSporttype();
+
+
 
                 // Отображение данных в соответствующих текстовых полях или других элементах интерфейса
                 Group_number.setText(name);
@@ -112,7 +134,15 @@ public class AdminGroup {
 
         back_button.setOnAction(event -> {
             SceneLoader.loadNewScene("choice.fxml", back_button.getScene());});
+
+        student_button.setOnAction(event -> {
+            studentsGroup = new StudentsGroup();
+            //studentsGroup.setIdGrupp(IdGroup); // передача IdGroup в класс StudentsGroup
+            //studentsGroup.setMaxsSint(MaxsS); // передача MaxsS в класс StudentsGroup
+            SceneLoader.loadNewScene("StudentsGroup.fxml", back_button.getScene());
+        });
     }
+
 
     public void displayingDataInATable() {
         List<Groups> students = ServerConnectionGroups.getGroupsData();
@@ -129,5 +159,6 @@ public class AdminGroup {
         // Применение фильтра к TableView
         table.setItems(data);
     }
+
 
 }
